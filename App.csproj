@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseAppHost>false</UseAppHost>
+    <MSBuildEnableWorkloadResolver>false</MSBuildEnableWorkloadResolver>
+    <SelfContained>true</SelfContained>
+    <Runtime>wasi-wasm</Runtime>
+    <RootNamespace>csharp-wasm</RootNamespace>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <PublishTrimmed>true</PublishTrimmed>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Fermyon.Spin.SDK" Version="0.1.0-dev" />
+  </ItemGroup>
+</Project>
